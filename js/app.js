@@ -19,8 +19,6 @@ pass = ........97s
 
 */
 
-
-
 const url = `https://api.themoviedb.org/3/movie/top_rated?api_key=a887a50ff50977d868897c721ddadc74`
 fetch(url)
 .then(res => res.json())
@@ -53,7 +51,6 @@ const loadMovieDetails = (id)=>{
 };
 
 const setMovieDetails = (movie) => {
-
     const movieDetailsContainer = document.getElementById('movie-details-container');
     movieDetailsContainer.innerHTML = '';
     const movieBoxDetail = document.createElement('div');
@@ -67,5 +64,4 @@ const setMovieDetails = (movie) => {
             <h5>Details: ${movie.overview}</h5>
     `
     movieDetailsContainer.appendChild(movieBoxDetail);
-
-}
+};
