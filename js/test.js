@@ -37,6 +37,7 @@ const loadMovieDetails = (id) =>{
 };
 
 const setMovieDetails = (movie) =>{
+    window.scrollTo(0,40)
     const movieDetailsContainer = document.getElementById('movie-details-container');
     movieDetailsContainer.innerHTML = '';
     const movieDetailsBox = document.createElement('div');
@@ -52,3 +53,6 @@ const setMovieDetails = (movie) =>{
     movieDetailsContainer.appendChild(movieDetailsBox);
 
 }
+
+
+
